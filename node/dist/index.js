@@ -1,5 +1,5 @@
 "use strict";
-const Matematica = require('./matematica');
+const Matematica = require('./matematica'); // Forma de importar em CommonJS
 let nome = 'Wanderson';
 let idade = 30;
 console.log(`Meu nome é ${nome} e eu tenho ${idade} anos.`);

@@ -1,4 +1,4 @@
-const Matematica = require('./matematica')
+const Matematica = require('./matematica') // Forma de importar em CommonJS
 
 let nome: string = 'Wanderson';
 let idade: number = 30;
