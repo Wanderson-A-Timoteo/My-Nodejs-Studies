@@ -1,4 +1,12 @@
-const Matematica = require('./matematica') // Forma de importar em CommonJS
+ // Forma de importar em CommonJS
+// const Matematica = require('./matematica');
+
+// Forma de importar em ECMAScript 6, destruturando e importando apenas as funções que desejados
+// Neste caso o console fica console.log(`SOMA: ${somar(n1, n2)}`);
+//import { somar, subtrair } from './matematica'; 
+
+// Forma de importar em ECMAScript 6, o * indica que estamos importando tudo e então damos qlqr nome para o import, neste caso foi Matematica
+import * as Matematica from './matematica';
 
 let nome: string = 'Wanderson';
 let idade: number = 30;
