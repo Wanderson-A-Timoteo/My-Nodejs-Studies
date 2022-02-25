@@ -12,3 +12,13 @@ console.log(validator_1.default.isEmail('gyibufiuybfuy'));
 console.log(validator_1.default.isEmail(email));
 // Verifica se é um endereço de IP valido
 console.log(validator_1.default.isIP(ip));
+// Verifica se o string esta escrito toda em miniscula
+console.log(validator_1.default.isLowercase('wanderson'));
+console.log(validator_1.default.isLowercase('WANDERSON'));
+let name = 'Wanderson';
+if (validator_1.default.isLowercase(name)) {
+    console.log(`A string ${name} é toda minúscula`);
+}
+else {
+    console.log(`A string ${name} NãO é toda minúscula`);
+}
