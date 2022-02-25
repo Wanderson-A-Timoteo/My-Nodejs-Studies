@@ -14,6 +14,7 @@
     "@types/validator": "^13.7.1"
   },
   "dependencies": {
+    "express": "^4.17.3",
     "validator": "^13.7.0"
   }
 }
