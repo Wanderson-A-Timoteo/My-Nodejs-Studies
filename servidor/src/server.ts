@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { request } from 'http';
+import path from 'path';
 import mainRoutes from './routes/index';
 import painelRoutes from './routes/painel';
 
@@ -7,6 +7,9 @@ import painelRoutes from './routes/painel';
 const server = express();
 
 server.use(mainRoutes);
+
+// Torna a pasta public acessível para todos usuarios de forma estatica
+server.use(express.static(path.join(__dirname, '../public')));
 
 server.use('/painel', painelRoutes);
 
